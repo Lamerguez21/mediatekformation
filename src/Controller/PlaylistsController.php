@@ -57,6 +57,7 @@ class PlaylistsController extends AbstractController {
         return $this->render(self::ADRESSE, [
                     'playlists' => $playlists,
                     'categories' => $categories
+         
         ]);
     }
 

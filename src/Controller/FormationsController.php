@@ -64,14 +64,14 @@ class FormationsController extends AbstractController {
             'valeur' => $valeur,
             'table' => $table
         ]);
-    }  
+    }
 
     #[Route('/formations/formation/{id}', name: 'formations.showone')]
     public function showOne($id): Response{
         $formation = $this->formationRepository->find($id);
         return $this->render("pages/formation.html.twig", [
             'formation' => $formation
-        ]);        
-    }   
+        ]);
+    }
     
 }
