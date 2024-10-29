@@ -1,6 +1,7 @@
 {% extends "basefront.html.twig" %}
 {% block body %}
     <table class="table table-striped">
+        <caption>Liste des playlists</caption>
         <thead>
             <tr>
                 <th class="text-left align-top" scope="col">
@@ -16,6 +17,13 @@
                         </div>
                     </form>                    
                 </th>
+                
+                <th class="text-left align-top" scope="col">
+                    nombre de formations<br />
+                    <a href="{{ path('playlists.sort', {champ:'nb_formations', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('playlists.sort', {champ:'nb_formations', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>                    
+                </th>
+                
                 <th class="text-left align-top" scope="col">
                     catégories
                     <form class="form-inline mt-1" method="POST" action="{{ path('playlists.findallcontain', {champ:'id', table:'categories'}) }}">
@@ -29,7 +37,7 @@
                                     value="{{ categorie.id }}">{{ categorie.name }}
                                 </option>
                             {% endfor %}
-                        </select>                    
+                        </select>
                     </form>            
                 </th>
                 <th class="text-center align-top" scope="col">
@@ -46,7 +54,13 @@
                             <h5 class="text-info">
                                 {{ playlists[k].name }}
                             </h5>
-                        </td>                 
+                        </td>
+                        
+                        <td class="text-left">
+                            {% set nb_formations = playlists[k].formations|length %}
+                            {{ nb_formations }}
+                        </td>
+                        
                         <td class="text-left">
                             {% set categories = playlists[k].categoriesplaylist %}
                             {% if categories|length > 0  %}

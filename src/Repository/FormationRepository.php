@@ -103,7 +103,7 @@ class FormationRepository extends ServiceEntityRepository
                 ->join('f.playlist', 'p')
                 ->where('p.id=:id')
                 ->setParameter('id', $idPlaylist)
-                ->orderBy('f.publishedAt', 'ASC')   
+                ->orderBy('f.publishedAt', 'ASC')
                 ->getQuery()
                 ->getResult();        
     }

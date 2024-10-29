@@ -12,10 +12,17 @@
             <br /><br />
             <strong>description :</strong><br />
                 {{ playlist.description|nl2br }}
+            
+            <br /><br />
+                <strong>nombre de formations :</strong>&nbsp;
+                {% set nb_formations = playlistformations|length %}
+                {{ nb_formations }}
+                
         </div>
+            
         <div class="col">
             <!-- boucle sur l'affichage des formations -->
-            {% for formation in playlistformations %}
+            {% for formation in playlistformations %}                                
                 <div class="row mt-1">
                     <div class="col-md-auto">
                         {% if formation.miniature %}
