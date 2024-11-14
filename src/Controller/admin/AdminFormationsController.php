@@ -36,7 +36,7 @@ class AdminFormationsController extends AbstractController {
         $this->categorieRepository= $categorieRepository;
     }
     
-    #[Route('/admin', name: 'admin.formations')]
+    #[Route('/admin/formations', name: 'admin.formations')]
     public function index(): Response{
         $formations = $this->formationRepository->findAll();
         $categories = $this->categorieRepository->findAll();
@@ -77,14 +77,14 @@ class AdminFormationsController extends AbstractController {
         ]);
     }
         
-    #[Route('/admin/suppr/{id}', name: 'admin.formation.suppr')]
+    #[Route('/admin/formations/suppr/{id}', name: 'admin.formation.suppr')]
     public function suppr(Formation $formation): Response {
         $this->formationRepository->remove($formation, true);
         return $this->redirectToRoute('admin.formations');
     }
     
     
-    #[Route('/admin/edit/{id}', name: 'admin.formation.edit')]
+    #[Route('/admin/formations/edit/{id}', name: 'admin.formation.edit')]
     public function edit(int $id, Request $request): Response {
         $formation = $this->formationRepository->find($id);
         $formFormation = $this->createForm(FormationType::class, $formation);
@@ -95,12 +95,11 @@ class AdminFormationsController extends AbstractController {
             return $this->redirectToRoute('admin.formations');
         }
         return $this->render("pages/admin/admin.formation.edit.html.twig", [
-            'formationedit' => $formation,
             'formformation' => $formFormation->createView()
         ]);
         }
         
-    #[Route('/admin/ajout', name: 'admin.formation.ajout')]
+    #[Route('/admin/formations/ajout', name: 'admin.formation.ajout')]
     public function ajout(Request $request): Response {
         $formation = new Formation();
         $formFormation = $this->createForm(FormationType::class, $formation);
@@ -111,7 +110,6 @@ class AdminFormationsController extends AbstractController {
             return $this->redirectToRoute('admin.formations');
         }
         return $this->render("pages/admin/admin.formation.ajout.html.twig", [
-            'formationedit' => $formation,
             'formformation' => $formFormation->createView()
         ]);
         }

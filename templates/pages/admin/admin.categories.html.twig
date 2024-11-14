@@ -1,0 +1,46 @@
+{% extends "baseadmin.html.twig" %}
+
+{% block body %}
+    {% for label, messages in app.flashes %}
+        <div class="text-center text-danger" >
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+    <div class="row mt-3">
+        <div class="col">
+            <table class="table table-striped">
+                <caption>Liste des catégories</caption>
+                <thead>
+                <th>
+                    Catégories
+                </th>
+                </thead>
+                <tbody>
+                    {% for categorie in categories %}
+                        <tr>
+                            <td>
+                                {{ categorie.name }}
+                            </td>
+                            <td class="text-end">
+                                <a href="{{ path('admin.categories.suppr',{id:categorie.id})}}" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer la catégorie {{ categorie.name }} ?')">Supprimer</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col text-end">
+            <form class="form-inline mt-1" method="POST" action="{{ path('admin.categories.ajout') }}">
+                <div class="form-group mr-1 mb-2">
+                    <input type="text" class="sm" name="recherche" required>
+                    <input type="hidden" name="_token" value="{{ csrf_token('filtre_name') }}">
+                    <button type="submit" class="btn btn-primary">Ajouter une catégorie</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
