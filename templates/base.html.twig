@@ -7,6 +7,11 @@
         {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </head>
+    <div class="container text-end">
+        {% if app.user %}
+            <a href='{{ path('logout') }}'>se déconnecter</a>
+        {% endif %}
+    </div>
     <body>
         <!-- entête -->
         {% block top %}{% endblock %}
