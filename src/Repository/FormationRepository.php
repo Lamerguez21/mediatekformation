@@ -88,10 +88,10 @@ class FormationRepository extends ServiceEntityRepository
     public function findAllLasted($nb) : array {
         return $this->createQueryBuilder('f')
                 ->orderBy('f.publishedAt', 'DESC')
-                ->setMaxResults($nb)     
+                ->setMaxResults($nb)
                 ->getQuery()
                 ->getResult();
-    }    
+    }
     
     /**
      * Retourne la liste des formations d'une playlist
