@@ -18,14 +18,14 @@ Dans le détail de chaque playlist le nombre de formations présentes s'affiche.
 
 ## Back-office
 ### Login
-Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office. Un lien de déconnexion sera présent sur chaque page du back-office pour se déconnecter.<br>
-![Capture d'écran 2024-12-05 143033](https://github.com/user-attachments/assets/695bf1ce-16d1-479b-b3b3-769403bfa778)<br>
+Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office. Un lien de déconnexion sera présent sur chaque page du back-office pour se déconnecter.<br><br>
+![Capture d'écran 2024-12-05 143033](https://github.com/user-attachments/assets/695bf1ce-16d1-479b-b3b3-769403bfa778)
 
 ### Formations
 La page des formations s'affiche de manière identique à celle du front-office, si n'est que chaque formation est accompagnée de deux boutons, l'un pour éditer la formation et l'autre pour la supprimer.<br><br>
 ![Capture d'écran 2024-12-05 092255](https://github.com/user-attachments/assets/d5a00acb-758e-46fa-8156-62a92a50b4d6)<br><br>
 Un bouton d'ajout de formation en haut de page permet d'accéder à un formulaire pour enregistrer une nouvelle formation.<br><br>
-![2024-12-05 09 26 12](https://github.com/user-attachments/assets/20d443f3-19da-4f31-8b63-9e25eb39ab22)<br><br>
+![2024-12-05 09 26 12](https://github.com/user-attachments/assets/20d443f3-19da-4f31-8b63-9e25eb39ab22)
 
 ### Playlists
 La page des playlists s'affiche de manière identique à celle du front-office, mais chaque playlist est accompagnée de deux boutons, l'un pour éditer la playlist et le second pour la supprimer.<br><br>
