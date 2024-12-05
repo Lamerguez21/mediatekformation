@@ -1,9 +1,10 @@
 # Mediatekformation
 ## Présentation
-Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br> 
-Actuellement, seule la partie front office a été développée. Elle contient les fonctionnalités globales suivantes :<br>
-![img1](https://github.com/user-attachments/assets/9c5c503b-738d-40cf-ba53-36ba4c0209e8)
-![Capture d'écran 2024-12-03 202707](https://github.com/user-attachments/assets/d0072127-d23e-4252-a815-bf835854a6e2)
+Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br>
+La présentation de l'application d'origine se situe dans le readme du dépôt d'origine qui se trouve à l'adresse suivante :<br>
+https://github.com/CNED-SLAM/mediatekformation
+La partie back-office a été développée. Elle contient les nouvelles fonctionnalités globales suivantes :<br>
+
 
 
 
