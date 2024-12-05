@@ -10,15 +10,17 @@ Un lien pour accéder à la partie admin a été ajouté dans la barre de naviga
 Aucune autre modification n'a été réalisée sur la page d'accueil, et des formations, toutes les autres fonctionnalitées sont décrites dans le readme du dépôt d'origine.
 
 ### Page des playlists
-Une nouvelle colonne a été ajoutée pour afficher le nombre de formations présent dans chaque playlist. Le tri croissant est décroissant sur ce nombre peut être appliqué sur la liste des playlists.<br>
+Une nouvelle colonne a été ajoutée pour afficher le nombre de formations présent dans chaque playlist. Le tri croissant est décroissant sur ce nombre peut être appliqué sur la liste des playlists.<br><br>
 ![Capture d'écran 2024-12-05 090507](https://github.com/user-attachments/assets/72c84719-86ce-4821-a115-f11e87695251)
 
 ### Détail d'une playlist
-Dans le détail de chaque playlist le nombre de formations présentes s'affiche.<br>
+Dans le détail de chaque playlist le nombre de formations présentes s'affiche.<br><br>
 ![Capture d'écran 2024-12-05 090715](https://github.com/user-attachments/assets/66bb9970-a96d-438f-b562-bd1edfaac7a9)
 
 ## Back-office
-###
+### Login
+Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office.
+
 
 ## Test de l'application en local
 - Vérifier que Composer, Git et Wamserver (ou équivalent) sont installés sur l'ordinateur.
