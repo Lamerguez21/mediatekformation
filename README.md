@@ -1,8 +1,7 @@
 # Mediatekformation
 ## Présentation
 Ce site, développé avec Symfony 6.4, permet d'accéder aux vidéos d'auto-formation proposées par une chaîne de médiathèques et qui sont aussi accessibles sur YouTube.<br>
-La présentation de l'application d'origine se situe dans le readme du dépôt d'origine qui se trouve à l'adresse suivante :<br>
-https://github.com/CNED-SLAM/mediatekformation<br>
+La présentation de l'application d'origine se situe dans le readme du dépôt d'origine qui se trouve à l'adresse suivante : https://github.com/CNED-SLAM/mediatekformation<br>
 La partie back-office a été développée. Elle contient les nouvelles fonctionnalités globales suivantes :<br>
 
 ## Front-office
@@ -19,7 +18,8 @@ Dans le détail de chaque playlist le nombre de formations présentes s'affiche.
 
 ## Back-office
 ### Login
-Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office. Un lien de déconnexion sera présent sur chaque page du back-office pour se déconnecter.
+Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office. Un lien de déconnexion sera présent sur chaque page du back-office pour se déconnecter.<br>
+![Capture d'écran 2024-12-05 143033](https://github.com/user-attachments/assets/695bf1ce-16d1-479b-b3b3-769403bfa778)<br>
 
 ### Formations
 La page des formations s'affiche de manière identique à celle du front-office, si n'est que chaque formation est accompagnée de deux boutons, l'un pour éditer la formation et l'autre pour la supprimer.<br><br>
@@ -35,7 +35,7 @@ Un bouton d'ajout de playlist en haut de page permet d'accéder à un formulaire
 
 ### Catégories
 La page des catégories permet d'afficher toutes les catégories accompagnées d'un bouton supprimer. Un formulaire pour ajouter une nouvelle catégorie est également présent sur la page<br><br>
-![Capture d'écran 2024-12-05 142558](https://github.com/user-attachments/assets/431a18de-8760-4df6-8727-d93e2e3d04d0)<br><br>
+![Capture d'écran 2024-12-05 142558](https://github.com/user-attachments/assets/431a18de-8760-4df6-8727-d93e2e3d04d0)<br>
 
 ## Test de l'application en ligne
 Pour tester l'application en ligne vous pouvez tout simplement vous rendre à l'adresse suivante :<br>
