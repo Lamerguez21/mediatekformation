@@ -19,8 +19,15 @@ Dans le détail de chaque playlist le nombre de formations présentes s'affiche.
 
 ## Back-office
 ### Login
-Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office.
+Une authentification avec un login et un mot de passe est requis pour pouvoir accéder à la partie back-office. Un lien de déconnexion sera présent sur chaque page du back-office pour se déconnecter.
 
+### Formations
+La page des formations s'affiche de manière identique que dans le front-office si n'est que chaque formation est accompagnée de deux boutons, l'un pour éditer la formation et l'autre pour la supprimer.<br>
+Un bouton d'ajout de formation en haut de page permet d'accéder à un formulaire pour enregistrer une nouvelle formation.<br><br>
+![Capture d'écran 2024-12-05 092255](https://github.com/user-attachments/assets/d5a00acb-758e-46fa-8156-62a92a50b4d6)<br><br>
+![2024-12-05 09 26 12](https://github.com/user-attachments/assets/20d443f3-19da-4f31-8b63-9e25eb39ab22)<br><br>
+
+### Playlists
 
 ## Test de l'application en local
 - Vérifier que Composer, Git et Wamserver (ou équivalent) sont installés sur l'ordinateur.
